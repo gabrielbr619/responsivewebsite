@@ -1,0 +1,160 @@
+@import 'colors';
+
+$Ubuntu:'Ubuntu', sans-serif;
+$Overpass:'Overpass', sans-serif;
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    text-align: center;
+}
+main{
+    overflow: hidden;
+    .title{
+        @include xl{
+            font-size: 45px;
+        }
+    }
+    .grid1{
+
+        .img1desktop{
+            @include xl{
+                grid-column:2;
+                grid-row: 1;
+                width: 110%;
+                margin-top: -195px;
+                }
+        }
+
+
+        @include xl{
+            margin-top:100px;
+            display:grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 3% 25% 3% 25%;
+        }
+
+        h2,p{
+            @include xl{
+            grid-column:1;
+            
+         }
+        }
+
+        .img1{
+           @include xl{
+               display:none;
+           }
+        }
+
+    }
+
+    h2{
+        color: $very_dark_blue_headings;
+        font-family: $Overpass;
+        font-weight: 600;
+        padding: 0 43px;
+    }
+    img{
+        width: 375px;
+        padding: 54px 0;
+    }
+
+    p{
+        font-family: $Ubuntu;
+        margin: 34px 40px;
+        line-height: 28px;
+        color: $very_dark_grayish_blue_body;
+    }
+    .img2{
+        position: absolute;
+        z-index: 2;
+        width: 375px;
+        padding: 54px 0;
+        left: 0;
+        margin-top: -40px;
+
+        @include xl{
+            width: 500px;
+            margin-top: -32em;
+            margin-left: 8em;
+        }
+    }
+    #section-1{
+        margin-top: 243px;
+        position: relative;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        height:625px;
+        background-color:hsl(237, 17%, 21%);
+        border-radius: 0 75px 0 75px;
+        overflow: hidden;
+
+        @include xl{
+            margin-top: -380px;
+            height:356px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-bottom: 200px;
+
+            h2,p{
+                grid-column:2;
+                text-align: left;
+                margin-right: 11em;
+            }
+        }
+        
+        .bg1{
+            width: 600px; /* width of container */
+            position: absolute;
+            top: -310px;
+            left:-120px;
+            z-index: 0;
+
+            @include xl{
+                width: 1000px;
+                top:-600px;
+            }
+
+        }
+        h2,p{color:white; z-index: 1;}
+        h2{margin-top: 88px;}
+        p{line-height: 28px;}
+    }
+
+    #section-2{
+        @include xl{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 3% 25% 3% 20%;
+
+            h2,p{
+                grid-column: 2;
+                text-align:left;
+            }
+            h2{
+                font-size:2.5em;
+            }
+            .img1{
+                @include xl{
+                    display:none;
+                }
+             }
+            .img4{
+                @include xl{
+                    margin-left: -16.2em;
+                    margin-top: -10em;
+                    grid-column:1;
+                    width:120%;
+
+                }
+            }
+        }
+    }
+}
+

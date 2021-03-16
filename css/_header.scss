@@ -1,0 +1,222 @@
+@import "colors";
+
+.teste{
+    position: relative;
+    top: 0;
+    width:375px;
+    height:600px;
+    background:$intro_mobile_nav;
+    text-align: center;
+    color: white;
+    border-radius:0px 0px 0px 75px;
+    margin-bottom: 127px;
+
+    @include xl {
+        width:100%;
+        height: 533px;
+    }
+    
+    nav{
+        position: relative;
+        z-index: 2;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        margin:0px 24px 0 24px;
+        padding-top:63px;
+
+        @include xl{
+            justify-content:space-between;
+            align-items: center;
+            margin-left: 150px;
+            margin-right: 143px;
+        }
+
+        ul{
+            display:none;
+
+            @include xl{
+                display:inline;
+                font-family: $Ubuntu;
+
+            }
+        }
+
+        div{
+            display:flex;
+            align-items:center;
+            img{
+                margin-right: 40px;
+            }
+            ul{
+                margin: 0 24px;
+            }
+        }
+
+        .login{
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+
+        }
+
+        .sign-up{
+            margin-left: 30px;
+            display:flex;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            border-radius: 80px;
+            height: 44px;
+            width: 135px;
+            outline: none;
+            z-index: 1;
+            cursor: pointer;
+            color: $light_red_CTA_text;
+            background-color:white;
+            border-style: none;
+            margin-right: 16px;
+            a{color: $light_red_CTA_text;}
+            a{
+                font-family: $Ubuntu;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+
+        li{
+            @include xl{
+                display:none;
+            }
+        }
+        label{
+            cursor: pointer;
+              position: relative;
+              display: block;
+              height: 22px;
+              width: 30px;
+
+              @include xl{
+                  display:none;
+              }
+
+            span{
+                position: absolute;
+                display: block;
+                height: 5px;
+                width: 100%;
+                border-radius: 30px;
+                background: white;
+                transition: 0.25s ease-in-out;
+              }
+              
+            span:nth-child(1){
+                top: 0;
+              }
+              
+            span:nth-child(2){
+                top: 8px;
+              }
+              
+            span:nth-child(3){
+                top: 16px;
+              }
+          }
+      }
+            }
+
+    
+.head{
+
+    h2,h1{
+        position: relative;
+        z-index: 1;
+        margin: 0 43px;
+    }
+    h2{
+        font-weight:400;
+        font-family: $Ubuntu;
+        font-size: 16px;
+        padding-bottom: 55px;
+    }
+    h1{
+        margin-top: 132px;
+        line-height: 48px;
+        padding-bottom: 44px;
+        font-family: $Overpass;
+    }
+
+    .bg-intro{
+        width: 375px; /* width of container */
+        height: 600px; /* height of container */
+        background-image: url(../images/bg-pattern-intro.svg);
+        background-size: 1400px 1400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: -350px -200px;
+        border-bottom-left-radius: 75px;
+        z-index: 1;
+
+        @include xl{
+            width: 100%; /* width of container */
+            height: 100%;
+            background-size:2200px;
+            background-position: -300px -850px;
+        }
+    }
+
+    .conteiner-btn{
+        display:flex;
+        flex-direction: row;
+        margin: 0 43px;
+
+
+        @include xl{
+            margin: 0 auto;
+            justify-content:center;
+            width: 100%;
+        }
+        .cft-btn{ 
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 80px;
+            height:48px;
+            width: 135px;
+            outline: none;
+            z-index: 1;
+            cursor: pointer;
+            a{
+                font-family: $Ubuntu;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        
+        }
+        #cft-btn-1{
+            color: $light_red_CTA_text;
+            background-color:white;
+            border-style: none;
+            margin-right: 16px;
+            a{color: $light_red_CTA_text;}
+        }
+        #cft-btn-1:hover{
+            transition:.2s;
+            background-color:$very_light_red_CTA_hoverbg;
+            a{color:white;            transition:.1s;}
+        }
+        #cft-btn-2{
+            color: white;
+            border:solid white;
+            a{color: white;}
+        }
+        #cft-btn-2:hover{
+            transition:.2s;
+            background-color:white;
+            a{color:$light_red_CTA_text;            transition:.1s;}
+        }
+    }
+    
+}

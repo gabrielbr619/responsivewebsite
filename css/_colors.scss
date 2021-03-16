@@ -1,0 +1,27 @@
+//Cores Primarias
+$light_red_CTA_text:hsl(356, 100%, 66%);
+$very_light_red_CTA_hoverbg:hsl(355, 100%, 74%);
+$very_dark_blue_headings: hsl(208, 49%, 24%);
+
+//Cores Neutras
+
+$grayish_blue_footer_txt:hsl(240, 2%, 79%);
+$very_dark_grayish_blue_body:hsl(207, 13%, 34%);
+$very_dark_black_blue_footer_bg:hsl(240, 10%, 16%);
+
+//Gradientes
+
+$intro_mobile_nav:linear-gradient(180deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+
+$background_gradient_body:hsl(237, 17%, 21%) to hsl(237, 23%, 32%);
+
+//Breakpoints
+
+// tablet grande e desktops
+$screen-xl-min: 768px;
+
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
