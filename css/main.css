@@ -18,6 +18,10 @@ main {
   }
 }
 
+main .grid1 .img1desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   main .grid1 .img1desktop {
     -ms-grid-column: 2;
@@ -154,6 +158,10 @@ main #section-1 h2 {
 
 main #section-1 p {
   line-height: 28px;
+}
+
+main #section-2 .img4 {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -540,9 +548,16 @@ footer li {
 }
 
 footer .attribution {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   text-align: center;
   z-index: 2;
+}
+
+@media (min-width: 768px) {
+  footer .attribution {
+    position: relative;
+  }
 }
 
 footer .attribution a {

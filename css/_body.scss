@@ -22,6 +22,9 @@ main{
     .grid1{
 
         .img1desktop{
+            display:none;
+
+
             @include xl{
                 grid-column:2;
                 grid-row: 1;
@@ -128,6 +131,9 @@ main{
     }
 
     #section-2{
+        .img4{
+            display:none;
+        }
         @include xl{
             display: grid;
             grid-template-columns: 50% 50%;
