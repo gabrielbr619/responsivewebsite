@@ -8,6 +8,17 @@ footer{
     font-family: $Ubuntu;
     position: relative;
 
+    @include xl{
+        height:318px;
+        display:grid;
+        border-top-right-radius: 75px;
+        grid-template-columns: 40% 15% 15% 15%;
+
+        li{
+            list-style: none;
+        }
+    }
+
     img{
         width: 100px;
         margin: 76px 137px;
@@ -23,12 +34,13 @@ footer{
 
     .attribution{
         position:relative;
-        bottom: -128px;
         text-align:center;
         z-index: 2;
 
         a{
             text-decoration: none;
+            color:rgb(224, 71, 24);
+            font-weight:bold;
         }
     }
 }

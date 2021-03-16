@@ -132,6 +132,7 @@ main{
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: 3% 25% 3% 20%;
+            margin-bottom: -278px;
 
             h2,p{
                 grid-column: 2;

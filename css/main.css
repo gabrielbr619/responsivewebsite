@@ -164,6 +164,7 @@ main #section-1 p {
         grid-template-columns: 50% 50%;
     -ms-grid-rows: 3% 25% 3% 20%;
         grid-template-rows: 3% 25% 3% 20%;
+    margin-bottom: -278px;
   }
   main #section-2 h2, main #section-2 p {
     -ms-grid-column: 2;
@@ -509,6 +510,20 @@ footer {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  footer {
+    height: 318px;
+    display: -ms-grid;
+    display: grid;
+    border-top-right-radius: 75px;
+    -ms-grid-columns: 40% 15% 15% 15%;
+        grid-template-columns: 40% 15% 15% 15%;
+  }
+  footer li {
+    list-style: none;
+  }
+}
+
 footer img {
   width: 100px;
   margin: 76px 137px;
@@ -526,12 +541,13 @@ footer li {
 
 footer .attribution {
   position: relative;
-  bottom: -128px;
   text-align: center;
   z-index: 2;
 }
 
 footer .attribution a {
   text-decoration: none;
+  color: #e04718;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
